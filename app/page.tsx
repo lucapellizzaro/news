@@ -21,7 +21,7 @@ export default async function Homepage() {
   const data = await getData();
   const articles = data.articles;
   return (
-    <main className="py-10 px-5 max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10">
+    <main className="py-5 md:py-10 px-5 max-w-screen-2xl m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-10">
       {articles.map((article: any, index: any) => (
         <article
           key={index}
