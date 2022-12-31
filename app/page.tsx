@@ -1,9 +1,9 @@
-import Link from "next/link";
-import { compareAsc, format } from "date-fns";
+import { format } from "date-fns";
 
 async function getData() {
   const res = await fetch(
-    `https://newsapi.org/v2/top-headlines?sources=google-news-it&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI_KEY}`
+    `https://newsapi.org/v2/top-headlines?language=it&country=it&apiKey=${process.env.NEXT_PUBLIC_NEWSAPI_KEY}`,
+    { next: { revalidate: 3600 } }
   );
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.

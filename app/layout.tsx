@@ -15,19 +15,18 @@ export default function RootLayout({
     <html lang="it" className={newsreader.variable}>
       <head />
       <body className="font-serif bg-gray-50 dark:bg-black text-gray-800 dark:text-white antialiased">
-        <header className="px-5 max-w-screen-2xl m-auto pb-7 mt-7 text-center">
-          <h1 className="text-3xl lg:text-5xl font-medium">
-            Jimmy News - Italia
-          </h1>
-          <h4 className="lg:text-lg text-sm mt-1 md:mt-2 font-sans dark:text-gray-400 text-gray-700">
-            Poche notizie, ma importanti. Niente pubblicità.
+        <header className="px-5 max-w-screen-2xl m-auto pb-4 mt-7 text-center">
+          <h1 className="text-4xl lg:text-5xl font-medium">Jimmy News</h1>
+          <h4 className="lg:text-base text-sm mt-1 md:mt-2 font-sans dark:text-gray-400 text-gray-700">
+            Poche notizie? Solo le più importanti.
           </h4>
         </header>
         {children}
-        <footer className="text-sm text-gray-500 font-sans py-2 px-5 max-w-screen-2xl m-auto flex sm:flex-row flex-col gap-1 items-center justify-between">
+        <footer className="text-xs lg:text-sm text-gray-500 font-sans py-2 px-5 max-w-screen-2xl m-auto flex sm:flex-row flex-col gap-1 items-center justify-between">
           <p>
-            &copy;{new Date().getFullYear()} Dati: News API - Fonte: Google News
-            Italy
+            &copy;{new Date().getFullYear()} Fonte dati gratuita: NewsAPI.org -
+            Aggiornamento notizie ogni 60 minuti - Niente pubblicità e nessun
+            cookies
           </p>
           <p>
             Creato con <span className="text-red-600">&hearts;</span> da{" "}
